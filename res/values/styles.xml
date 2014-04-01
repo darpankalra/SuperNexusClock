@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+    <style name="AppDialogTheme" parent="android:Theme.Dialog">
+        <!-- API 14 theme customizations can go here. -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

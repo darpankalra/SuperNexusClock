@@ -1,0 +1,61 @@
+<resources>
+
+    <string name="app_name">Super Nexus Clock Widget</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="pref_sechand">Show second hand</string>
+    <string name="pref_setalarmonclick">Set Alarm on touch</string>
+    <string name="pref_separatecolors">Separate colors</string>
+    <string name="pref_separatecolorssummary">Apply separate colors for different hands</string>
+    <string name="summary_certainphones">Only launches common clock apps</string>
+    <string name="pref_choosecolor">Choose Color</string>
+    <string name="pref_chooserimshadowcolor">Clock rim shadow color</string>
+    <string name="pref_chooserimcolor">Clock rim color</string>
+    <string name="pref_chooseseccolor">Second hand color</string>
+    <string name="pref_choosesecshadowcolor">Second hand shadow color</string>
+    <string name="pref_choosesecshadowradius">Second hand shadow radius</string>
+    <string name="pref_choosemincolor">Minute hand color</string>
+    <string name="pref_chooseminshadowcolor">Minute hand shadow color</string>
+    <string name="pref_chooseminshadowradius">Minute hand shadow radius</string>
+    <string name="pref_choosehourcolor">Hour hand color</string>
+    <string name="pref_choosehourshadowcolor">Hour hand shadow color</string>
+    <string name="pref_choosehourshadowradius">Hour hand shadow radius</string>
+    <string name="pref_downloadstylepacks">Download Theme Packs</string>
+    <string name="pref_about">About</string>
+    <string name="pref_imageswitcher">Image Switcher</string>
+    <string name="pref_rateapp">Rate Our App</string>
+    <string name="text_arcclock">Arc Clock</string>
+    <string name="text_simpleclock">Simple Clock</string>
+    <string name="text_applystyle">Apply Theme</string>
+    <string name="text_buynow">Buy Now</string>
+    <string name="text_about">This amazing app was created by flickcraft at their Chandigarh HQ.</string>
+    <string name="copyright_image">Copyright Image</string>
+    <string name="about_app">About App</string>
+    <string name="title_bar">Title Bar</string>
+    <string name="footer">Footer</string>
+    <string name="text_copyright">\u00A9 Flickcraft 2012</string>
+    <string name="dots">.  .  .</string>
+    <string name="prefs_title">Basic Settings</string>
+    <string name="prefs_title2">Advanced Settings</string>
+    <string name="prefs_titlerim">Advanced Clock Rim Settings</string>
+    <string name="prefs_titlesec">Advanced Second Hand Settings</string>
+    <string name="prefs_titlemin">Advanced Minute Hand Settings</string>
+    <string name="prefs_titlehour">Advanced Hour Hand Settings</string>
+    <string name="prefs_title3">Other</string>
+    <string name="prefs_choosecolorsummary">Choose a color for the clock</string>
+    <string name="prefs_chooserimshadowcolorsummary">Choose a color for the shadow of the clock rim</string>
+    <string name="prefs_chooserimcolorsummary">Choose a separate color for the clock rim</string>
+    <string name="prefs_chooseseccolorsummary">Choose a color for the second hand</string>
+    <string name="prefs_choosesecshadowcolorsummary">Choose a color for the shadow of the second hand</string>
+    <string name="prefs_choosesecshadowradiussummary">Choose a blur radius value for the shadow of the second hand</string>
+    <string name="prefs_choosemincolorsummary">Choose a color for the minute hand</string>
+    <string name="prefs_chooseminshadowcolorsummary">Choose a color for the shadow of the minute hand</string>
+    <string name="prefs_chooseminshadowradiussummary">Choose a blur radius value for the shadow of the minute hand</string>
+    <string name="prefs_choosehourcolorsummary">Choose a color for the hour hand</string>
+    <string name="prefs_choosehourshadowcolorsummary">Choose a color for the shadow of the hour hand</string>
+    <string name="prefs_choosehourshadowradiussummary">Choose a blur radius value for the shadow of the hour hand</string>
+    <string name="app_link">market://details?id=com.flickcraft.supernexusclock</string>
+    <string name="feedback_subject">Feedback</string>
+
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.flickcraft.supernexusclock"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity 
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"></activity>
+        
+        <activity android:name=".Main"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+      	<activity android:name=".ColorPickerActivity" 
+      			android:label="@string/app_name" 
+      			android:screenOrientation="portrait"/>
+        
+        <receiver
+            android:name=".ClockWidget"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.flickcraft.supernexusclock.WIDGET_UPDATE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.flickcraft.supernexusclock.SET_ALARM" />
+            </intent-filter>
+            <intent-filter>
+        		<action android:name="android.intent.action.BOOT_COMPLETED" />
+    		</intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/clock_widget_provider" />
+        </receiver>
+
+        <activity android:name="com.flickcraft.supernexusclock.ClockWidgetConfigActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.flickcraft.supernexusclock.AboutActivity"></activity>
+        <activity android:name="com.flickcraft.supernexusclock.ClockWidgetConfigActivityAdvanced"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity android:name="com.flickcraft.supernexusclock.ChooseStyle2"></activity>
+        <activity android:name="com.flickcraft.supernexusclock.RgbColorDialog"
+            android:theme="@style/AppDialogTheme"></activity>
+        <activity
+            android:name="com.flickcraft.supernexusclock.Share" >
+            <intent-filter>
+                <action android:name="com.flickcraft.supernexusclock.SHARE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

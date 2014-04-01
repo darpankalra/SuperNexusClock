@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+    	xmlns:android="http://schemas.android.com/apk/res/android">
+	    
+    <CheckBoxPreference
+	        android:defaultValue="false"
+	        android:key="separate_colors"
+	        android:title="@string/pref_separatecolors"
+	        android:summary="@string/pref_separatecolorssummary" />
+    
+    <PreferenceCategory 
+        android:title="@string/prefs_titlerim"
+        android:key="pref_advancedrim_settings">
+	    
+        <CheckBoxPreference
+	        android:defaultValue="false"
+	        android:key="shadow_rim"
+	        android:title="Shadow of rim"
+	        android:summary="Display a shodow for the clock rim" />
+        
+        <Preference
+            android:dependency="separate_colors" 
+	        android:key="pref_rimcoloractivity"
+	        android:title="@string/pref_chooserimcolor"
+	        android:summary="@string/prefs_chooserimcolorsummary" />
+        
+        <Preference 
+            android:dependency="shadow_rim"
+	        android:key="pref_shadowrimcoloractivity"
+	        android:title="@string/pref_chooserimshadowcolor"
+	        android:summary="@string/prefs_chooserimshadowcolorsummary" />
+	    
+        </PreferenceCategory>
+    <PreferenceCategory 
+        android:title="@string/prefs_titlesec"
+        android:key="pref_advancedsecond_settings">
+	    
+        <Preference
+            android:dependency="separate_colors" 
+	        android:key="pref_seccoloractivity"
+	        android:title="@string/pref_chooseseccolor"
+	        android:summary="@string/prefs_chooseseccolorsummary" />
+        
+        <Preference 
+	        android:key="pref_shadowseccoloractivity"
+	        android:title="@string/pref_choosesecshadowcolor"
+	        android:summary="@string/prefs_choosesecshadowcolorsummary" />
+        
+        <Preference 
+	        android:key="pref_shadowsecradius"
+	        android:title="@string/pref_choosesecshadowradius"
+	        android:summary="@string/prefs_choosesecshadowradiussummary" />
+	    
+        </PreferenceCategory>
+    <PreferenceCategory 
+        android:title="@string/prefs_titlemin"
+        android:key="pref_advancedminute_settings">
+	    
+        <Preference 
+            android:dependency="separate_colors"
+	        android:key="pref_mincoloractivity"
+	        android:title="@string/pref_choosemincolor"
+	        android:summary="@string/prefs_choosemincolorsummary" />
+        
+        <Preference 
+	        android:key="pref_shadowmincoloractivity"
+	        android:title="@string/pref_chooseminshadowcolor"
+	        android:summary="@string/prefs_chooseminshadowcolorsummary" />
+        
+        <Preference 
+	        android:key="pref_shadowminradius"
+	        android:title="@string/pref_chooseminshadowradius"
+	        android:summary="@string/prefs_chooseminshadowradiussummary" />
+	    
+        </PreferenceCategory>
+    <PreferenceCategory 
+        android:title="@string/prefs_titlehour"
+        android:key="pref_advancedhour_settings">
+	    
+        <Preference 
+            android:dependency="separate_colors"
+	        android:key="pref_hourcoloractivity"
+	        android:title="@string/pref_choosehourcolor"
+	        android:summary="@string/prefs_choosehourcolorsummary" />
+        
+        <Preference 
+	        android:key="pref_shadowhourcoloractivity"
+	        android:title="@string/pref_choosehourshadowcolor"
+	        android:summary="@string/prefs_choosehourshadowcolorsummary" />
+        
+        <Preference 
+	        android:key="pref_shadowhourradius"
+	        android:title="@string/pref_choosehourshadowradius"
+	        android:summary="@string/prefs_choosehourshadowradiussummary" />
+	    
+        </PreferenceCategory>
+    </PreferenceScreen>

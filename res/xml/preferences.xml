@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+	
+     <PreferenceCategory 
+        android:title="@string/prefs_title"
+        android:key="pref_key_storage_settings">
+        
+	    <CheckBoxPreference
+	        android:defaultValue="true"
+	        android:key="sec_hand"
+	        android:title="@string/pref_sechand" />
+	    <CheckBoxPreference
+	        android:defaultValue="true"
+	        android:key="setalarm_onclick"
+	        android:title="@string/pref_setalarmonclick"
+	        android:summary="@string/summary_certainphones" />
+	
+	    <!-- <ListPreference
+	        android:defaultValue="0"
+	        android:entries="@array/styles"
+	        android:entryValues="@array/stylevalues"
+	        android:key="choose_style"
+	        android:title="@string/pref_choosestyle" /> -->
+	    
+	    <Preference 
+	        android:key="pref_coloractivity"
+	        android:title="@string/pref_choosecolor"
+	        android:summary="@string/prefs_choosecolorsummary" />
+	    
+	    </PreferenceCategory>
+	    
+    <!-- <PreferenceScreen 
+        android:key="pref_advanced_settings"
+        android:title="@string/prefs_title2">
+	    
+    <PreferenceCategory 
+        android:title="@string/prefs_titlesec"
+        android:key="pref_advancedsecond_settings">
+	    
+        <Preference 
+	        android:key="pref_shadowseccoloractivity"
+	        android:title="@string/pref_choosesecshadowcolor"
+	        android:summary="@string/prefs_choosesecshadowcolorsummary" />
+        
+        <Preference 
+	        android:key="pref_shadowsecradius"
+	        android:title="@string/pref_choosesecshadowradius"
+	        android:summary="@string/prefs_choosesecshadowradiussummary" />
+	    
+        </PreferenceCategory>
+    <PreferenceCategory 
+        android:title="@string/prefs_titlemin"
+        android:key="pref_advancedminute_settings">
+	    
+        <Preference 
+	        android:key="pref_shadowmincoloractivity"
+	        android:title="@string/pref_chooseminshadowcolor"
+	        android:summary="@string/prefs_chooseminshadowcolorsummary" />
+        
+        <Preference 
+	        android:key="pref_shadowminradius"
+	        android:title="@string/pref_chooseminshadowradius"
+	        android:summary="@string/prefs_chooseminshadowradiussummary" />
+	    
+        </PreferenceCategory>
+    <PreferenceCategory 
+        android:title="@string/prefs_titlehour"
+        android:key="pref_advancedhour_settings">
+	    
+        <Preference 
+	        android:key="pref_shadowhourcoloractivity"
+	        android:title="@string/pref_choosehourshadowcolor"
+	        android:summary="@string/prefs_choosehourshadowcolorsummary" />
+        
+        <Preference 
+	        android:key="pref_shadowhourradius"
+	        android:title="@string/pref_choosehourshadowradius"
+	        android:summary="@string/prefs_choosehourshadowradiussummary" />
+	    
+        </PreferenceCategory>
+    </PreferenceScreen> -->
+    
+    <Preference 
+	    android:title="@string/prefs_title2">
+	    <intent
+	         android:targetPackage="com.flickcraft.supernexusclock"
+	         android:targetClass="com.flickcraft.supernexusclock.ClockWidgetConfigActivityAdvanced" />
+	</Preference>
+        
+    <PreferenceCategory 
+        android:title="@string/prefs_title3"
+        android:key="pref_other_settings">
+	
+	    <Preference 
+	        android:title="@string/pref_rateapp">
+	        <intent
+	            android:action="android.intent.action.VIEW"
+	            android:data="market://details?id=com.flickcraft.supernexusclock" />
+	    </Preference>
+	    
+	    <Preference
+            android:title="Share"
+            android:summary="Share this app with friends" >
+            <intent android:action="com.flickcraft.supernexusclock.SHARE" />
+        </Preference>
+        
+	    <Preference
+            android:title="Feedback"
+            android:summary="Send us your views" >
+            <intent android:action="android.intent.action.VIEW"
+                android:data="mailto:support@flickcraft.com">
+            <extra android:name="android.intent.extra.SUBJECT"
+                android:value="@string/feedback_subject" />
+            </intent>
+        </Preference>
+	    
+	    <Preference 
+	        android:title="@string/pref_about">
+	        <intent
+	             android:targetPackage="com.flickcraft.supernexusclock"
+	             android:targetClass="com.flickcraft.supernexusclock.AboutActivity" />
+	    </Preference>
+	</PreferenceCategory>
+
+</PreferenceScreen>
